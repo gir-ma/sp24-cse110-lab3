@@ -1,0 +1,235 @@
+/*this will be my first css file to format the second webpage*/
+/*create a banner and color for the title*/
+#banner{
+    background-color: #15609e;
+    color: white;
+    margin-top: 75px;
+    text-align: center;
+    padding: 10px 0;
+
+}
+/* Color Examples */
+/* Using various color formats */
+
+/* RGB Color */
+body {
+    color: rgb(34, 34, 34); /* Dark gray text color */
+}
+
+/* Hex Color */
+h2 {
+    color: #007bff; /* Blue heading color */
+}
+
+/* HSL Color */
+#Brainsrom {
+    background-color: hsl(240, 100%, 90%); /* Light blue background */
+}
+
+/* CSS Variables & Fallbacks */
+/* Example of using a CSS variable with fallback */
+:root {
+    --primary-color: #4c00ff; /* Default primary color */
+}
+
+h3 {
+    color: var(--primary-color, #0dded0); /* Use primary color variable with fallback */
+}
+
+/* Gradient Background */
+#Chech-ins {
+    background: linear-gradient(100deg, #e3e6ec, #27d7e0); /* Diagonal gradient from gray to light-greenish? */
+}
+
+/* Relative Units */
+h2#agenda {
+    font-size: 2.5rem; /* Relative font size in rem */
+    margin-bottom: 0.5em; /* Relative margin in em */
+}
+
+details {
+    padding: 1%; /* Relative padding in percentage */
+}
+
+/* Absolute Units */
+p {
+    font-size: 18px; /* Absolute font size in pixels */
+    margin-bottom: 20px; /* Absolute margin in pixels */
+}
+
+details summary {
+    border-bottom: 2px solid #a8a4a4; /* Absolute border width in pixels */
+}
+
+ul {
+    padding: 0.5in; /* Absolute padding in inches */
+}
+
+li {
+    margin-bottom: 0.5cm; /* Absolute margin in centimeters */
+}
+
+/* Margin */
+h2#unfinished {
+    margin-top: 20px; /* Longhand margin-top */
+    margin-bottom: 30px; /* Longhand margin-bottom */
+    margin-left: 10px; /* Longhand margin-left */
+    margin-right: 10px; /* Longhand margin-right */
+}
+
+details {
+    margin: 20px 0; /* Shorthand margin for top and bottom */
+}
+
+/* Padding */
+p {
+    padding-top: 15px; /* Longhand padding-top */
+    padding-bottom: 15px; /* Longhand padding-bottom */
+    padding-left: 5px; /* Longhand padding-left */
+    padding-right: 5px; /* Longhand padding-right */
+}
+
+ol {
+    padding: 15px; /* Shorthand padding */
+}
+/* Borders */
+h2#unfinished {
+    border-style: solid; /* Border style */
+    border-color: #333; /* Border color */
+    border-width: 2px; /* Border width */
+    border-radius: 5px; /* Border radius */
+}
+
+details {
+    border: 1px dashed #666; /* Shorthand border */
+}
+
+span#specialText {
+    border: 2px solid #f00; /* Border around special text span */
+    border-radius: 10px; /* Border radius for special text span */
+}
+
+/* Text Styles */
+p {
+    color: #333; /* Text color */
+   /* text-decoration: underline; /* Text decoration - underline */
+    text-align: justify; /* Text alignment - justify */
+}
+
+details summary {
+    color: #007bff; /* Text color */
+    text-decoration: none; /* Remove text decoration */
+    text-align: center; /* Text alignment - center */
+}
+/* Display Property */
+ol {
+    display: block; /* Display as a block element */
+}
+
+ol li {
+    display: inline-block; /* Display list items as inline-block elements */
+}
+/* Sizing */
+img {
+    width: 300px; /* Set the width of the image */
+    height: auto; /* Maintain the aspect ratio */
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    min-width: 100px; /* Set a minimum width for the image */
+}
+
+/* Positioning */
+h2#forms {
+    position: relative; /* Position relative to its normal position */
+    left: 20px; /* Offset the element from the left by 20 pixels */
+    top: 10px; /* Offset the element from the top by 10 pixels */
+}
+
+/* Pseudo-class */
+button[type="submit"]:hover {
+    background-color: #007bff; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+/*Flexbox*/
+header {
+    display: flex; /* Use Flexbox layout */
+    justify-content: space-between; /* Align children with equal space between them */
+    align-items: center; /* Align children vertically */
+    padding: 10px 20px; /* Add padding for spacing */
+    background-color: #333; /* Background color for header */
+}
+
+nav ul {
+    display: flex; /* Use Flexbox layout for menu items */
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+    margin-right: 20px; /* Add margin between menu items */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove margin from last menu item */
+}
+
+nav ul li a {
+    color: #fff; /* Text color for menu items */
+    text-decoration: none; /* Remove default underline */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Change text color on hover */
+}
+/*Grid*/
+#Chech-ins ul {
+    display: grid; /* Use CSS Grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Automatically create columns with minimum width of 150px */
+    grid-gap: 10px; /* Set the gap between grid items */
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+}
+
+#Chech-ins ul li {
+    padding: 5px; /* Add padding to each grid item */
+    border: 1px solid #ccc; /* Add border for visual separation */
+}
+
+/* Default styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Media query for small screens (phones) */
+@media only screen and (max-width: 600px) {
+    /* Styles for small screens */
+    body {
+        font-size: 14px; /* Example: Reduce font size for small screens */
+    }
+}
+
+/* Media query for medium screens (tablets or smaller laptops) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Styles for medium screens */
+    body {
+        font-size: 18px; /* Example: Increase font size for medium screens */
+    }
+}
+
+/* Media query for large screens (desktops) */
+@media only screen and (min-width: 1025px) {
+    /* Styles for large screens */
+    body {
+        font-size: 20px; /* Example: Further increase font size for large screens */
+    }
+}
+/*Fonts*/
+/* Load the font using @import */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* Apply the font to the paragraph with the special-paragraph class */
+.different-font {
+    font-family: 'Pacifico', cursive; /* Use Pacifico font for paragraph text */
+}
