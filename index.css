@@ -16,6 +16,10 @@ body {
     color: rgb(34, 34, 34); /* Dark gray text color */
 }
 
+/*selector list to set font of titles*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arial', sans-serif;
+}
 /* Hex Color */
 h2 {
     color: #007bff; /* Blue heading color */
@@ -37,7 +41,7 @@ h3 {
 }
 
 /* Gradient Background */
-#Chech-ins {
+#Check-ins {
     background: linear-gradient(100deg, #e3e6ec, #27d7e0); /* Diagonal gradient from gray to light-greenish? */
 }
 
@@ -183,7 +187,7 @@ nav ul li a:hover {
     color: #ffd700; /* Change text color on hover */
 }
 /*Grid*/
-#Chech-ins ul {
+#Check-ins ul {
     display: grid; /* Use CSS Grid layout */
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Automatically create columns with minimum width of 150px */
     grid-gap: 10px; /* Set the gap between grid items */
@@ -191,7 +195,7 @@ nav ul li a:hover {
     padding: 0; /* Remove default padding */
 }
 
-#Chech-ins ul li {
+#Check-ins ul li {
     padding: 5px; /* Add padding to each grid item */
     border: 1px solid #ccc; /* Add border for visual separation */
 }
@@ -225,11 +229,126 @@ body {
         font-size: 20px; /* Example: Further increase font size for large screens */
     }
 }
+
+
 /*Fonts*/
 /* Load the font using @import */
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
 /* Apply the font to the paragraph with the special-paragraph class */
-.different-font {
-    font-family: 'Pacifico', cursive; /* Use Pacifico font for paragraph text */
+p#different-font {
+    font-family: 'Dancing Script', cursive; /* Use Pacifico font for paragraph text */
+}
+
+/*using all the selectors*/
+/*universal selector to reset or set default style*/
+* {
+    box-sizing: border-box;
+    margin: 10;
+    padding: 5;
+}
+/*Attribute selector for styling the inputs*/
+input[type="text"] {
+    padding: 5px;
+    border: 3px solid #5d7f46;
+}
+/*child combinator*/
+nav > ul > li {
+    display: inline-block;
+}
+/*General sibling combinator*/
+h2 ~ p {
+    margin-top: 10px;
+}
+/*Adjacent sibling combinator*/
+h2 + p {
+    font-weight: bold;
+}
+/*Combining Two Selectors*/
+p.special-paragraph {
+    font-style: italic;
+}
+/*:has() Selector*/
+nav ul li:has(> ul) {
+    position: relative;
+}
+/*Nested Selectors: */
+nav ul {
+    list-style: none;
+    padding: 20;
+    margin: 20;
+
+    li {
+        display: inline-block;
+
+        a {
+            color: #fdfdfd;
+            text-decoration: none;
+
+            &:hover {
+                color: #007bff;
+            }
+        }
+    }
+}
+
+
+
+/* Formating the interest form area Styles */
+
+#form-banner {
+    background-color: #7c96aa;
+    color: rgb(66, 10, 48);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#form-banner h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+#form-banner fieldset {
+    border: none;
+    padding: 0;
+}
+
+#form-banner legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#form-banner label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#form-banner input[type="text"],
+#form-banner input[type="date"],
+#form-banner textarea,
+#form-banner select {
+    padding: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#form-banner input[type="checkbox"],
+#form-banner input[type="radio"] {
+    margin-right: 5px;
+}
+
+#form-banner button[type="submit"] {
+    background-color: #0051ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#form-banner button[type="submit"]:hover {
+    background-color: #b34200;
 }
