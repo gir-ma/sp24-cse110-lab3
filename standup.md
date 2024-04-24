@@ -1,31 +1,34 @@
 # Standup Meeting Notes
 
-### Date: [Insert Date]
+### Date: 04/21/2024
 
 ## Attendees
 
-- [Insert Name]
-- [Insert Name]
-- [Insert Name]
+- Girma
+- Me
+- Myself
 
 ## What did you do yesterday?
 
-[Insert Text]
+Created the HTML structure for the web page.
+Added basic CSS styling for layout and typography.
 
-## What will you do today?
+## What do you plan to work on next?
 
-[Insert Text]
+Integrate advanced CSS features (colors, backgrounds, units, box model, etc.).
+Utilize different CSS selectors (class, ID, attribute, pseudo-class, combinators, etc.).
+Validate the CSS code for errors and warnings.
 
 ## Any challenges/need help on?
 
-[Insert Text]
+Validating after adding color to css file
 
 ## Additional Notes
 
-[Insert Text]
+Note: This Lab is Due by 4/23/2024
 
 ## Action Items
 
-- [Insert Action Item]
-- [Insert Action Item]
-- [Insert Action Item]
+- Publish your webpage
+- save the link in README.md file
+- submit the link to your repo
